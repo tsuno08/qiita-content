@@ -111,11 +111,14 @@ sh ./setup_qiita.sh
 
 ディレクトリを見ると、既存の記事が `public/` 以下に全て `md` ファイルとして落ちてきています。
 
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/697143/d5062734-8110-4f3b-b48e-c991b1cdebe9.png)
+
 あとは新規で記事を書く場合は好きなエディタで書いて `git push` するだけです。
 
-GitHubを見に行くと、リポジトリが作られ、既に記事一式がPushされ、Actionsの設定も完了しているはずです。
+pushしてGitHubを見に行くと、リポジトリが作られ、既に記事一式がPushされ、Actionsの設定も完了しているはずです。
 
-![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/697143/d5062734-8110-4f3b-b48e-c991b1cdebe9.png)
+![スクリーンショット 2025-11-21 22.18.20.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/697143/b179c5ed-0fab-4ce1-8cfe-ab73e56541a1.png)
+
 
 ## おまけ
 既存の記事を取得した際にファイル名が `[id].md` になるので、`[title].md` に変換するスクリプトも作りました！
