@@ -3,7 +3,7 @@ title: Insiders版じゃなくてもGitHub CopilotのPlanモードとサブエ�
 tags:
   - GitHub
   - AI
-  - githubcopilot
+  - GitHubCopilot
   - LLM
 private: false
 updated_at: '2025-11-18T16:22:39+09:00'

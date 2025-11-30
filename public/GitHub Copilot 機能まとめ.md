@@ -5,7 +5,7 @@ tags:
   - GitHub
   - AI
   - VSCode
-  - githubcopilot
+  - GitHubCopilot
 private: false
 updated_at: '2025-04-11T19:40:34+09:00'
 id: f077570ecb74cd7cf398
