@@ -6,7 +6,6 @@ tags:
   - CodeRabbit
   - CLI
   - Gemini
-  - GeminiCLI
 private: false
 updated_at: ''
 id: null
