@@ -1,14 +1,14 @@
 ---
 title: CodeRabbit CLIで生成とレビューの反復のサイクルを回す
 tags:
+  - CLI
   - AI
+  - Gemini
   - LLM
   - CodeRabbit
-  - CLI
-  - Gemini
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-12-01T08:14:55+09:00'
+id: 55bfc880f6598bb242a1
 organization_url_name: null
 slide: false
 ignorePublish: false
