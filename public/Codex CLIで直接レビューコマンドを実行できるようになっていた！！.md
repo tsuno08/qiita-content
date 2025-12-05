@@ -1,14 +1,14 @@
 ---
 title: Codex CLI で直接レビューコマンドを実行できるようになっていた！！
 tags:
+  - AI
+  - コードレビュー
   - OpenAI
   - codex
-  - AI
   - LLM
-  - コードレビュー
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-12-05T14:47:45+09:00'
+id: ff4798bcd18e5f94d820
 organization_url_name: null
 slide: false
 ignorePublish: false
