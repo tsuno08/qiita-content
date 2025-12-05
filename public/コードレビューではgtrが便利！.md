@@ -3,8 +3,9 @@ title: コードレビューではgtrが便利！
 tags:
   - Git
   - GitHub
+  - コードレビュー
 private: false
-updated_at: '2025-12-01T10:20:10+09:00'
+updated_at: '2025-12-02T21:47:18+09:00'
 id: 0f16c7de2a85a7aad6c8
 organization_url_name: null
 slide: false
@@ -37,6 +38,43 @@ Claude Code や Codex などを、そのブランチで独立して起動可能
 
 ### 環境構築の自動化
 `npm install` の自動実行や `.env` ファイルのコピーも設定可能
+
+## 導入方法
+:::note warn
+Git 2.5以上がインストールされている前提です🙏
+:::
+
+リポジトリをクローンし、PATHを通すだけで完了します！
+
+https://github.com/coderabbitai/git-worktree-runner
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/coderabbitai/git-worktree-runner.git
+cd git-worktree-runner
+
+# 実行ファイルへのシンボリックリンクを作成（またはPATHに追加）
+sudo ln -s "$(pwd)/bin/git-gtr" /usr/local/bin/git-gtr
+```
+
+Tabキーによる入力補助の設定方法は以下です！（Zsh の例を記載）
+
+```bash
+# 1. 補完用ディレクトリを作成し、ファイルをコピー
+mkdir -p ~/.zsh/completions
+cp /path/to/git-worktree-runner/completions/_git-gtr ~/.zsh/completions/
+
+# 2. .zshrc に設定を追加
+cat >> ~/.zshrc <<'EOF'
+fpath=(~/.zsh/completions $fpath)
+autoload -Uz compinit && compinit
+source ~/.zsh/completions/_git-gtr
+EOF
+
+# 3. キャッシュをクリアして設定を反映
+rm -f ~/.zcompdump*
+source ~/.zshrc
+```
 
 ## 基本的な使い方
 
